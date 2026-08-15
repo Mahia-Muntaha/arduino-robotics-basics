@@ -1,0 +1,29 @@
+// LDR Sensor with LED Control
+
+const int LDR_PIN = A0;
+const int LED_PIN = 9;
+const int THRESHOLD = 400;
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(LED_PIN, OUTPUT);
+}
+
+void loop()
+{
+  int lightLevel = analogRead(LDR_PIN);
+
+  Serial.println(lightLevel);
+
+  if (lightLevel < THRESHOLD)
+  {
+    digitalWrite(LED_PIN, HIGH);
+  }
+  else
+  {
+    digitalWrite(LED_PIN, LOW);
+  }
+
+  delay(100);
+}
