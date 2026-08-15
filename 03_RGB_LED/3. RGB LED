@@ -1,0 +1,75 @@
+// RGB LED Color Patterns
+
+const int RED_PIN = 13;
+const int BLUE_PIN = 12;
+const int GREEN_PIN = 11;
+
+void setup()
+{
+  pinMode(RED_PIN, OUTPUT);
+  pinMode(BLUE_PIN, OUTPUT);
+  pinMode(GREEN_PIN, OUTPUT);
+}
+
+void loop()
+{
+  lavenderBlink();
+}
+
+void rgbBlink()
+{
+  digitalWrite(RED_PIN, HIGH);
+  delay(1000);
+  digitalWrite(RED_PIN, LOW);
+  delay(1000);
+
+  digitalWrite(GREEN_PIN, HIGH);
+  delay(1000);
+  digitalWrite(GREEN_PIN, LOW);
+  delay(1000);
+
+  digitalWrite(BLUE_PIN, HIGH);
+  delay(1000);
+  digitalWrite(BLUE_PIN, LOW);
+  delay(1000);
+}
+
+void grbBlink()
+{
+  digitalWrite(GREEN_PIN, HIGH);
+  delay(1000);
+  digitalWrite(GREEN_PIN, LOW);
+  delay(1000);
+
+  digitalWrite(RED_PIN, HIGH);
+  delay(1000);
+  digitalWrite(RED_PIN, LOW);
+  delay(1000);
+
+  digitalWrite(BLUE_PIN, HIGH);
+  delay(1000);
+  digitalWrite(BLUE_PIN, LOW);
+  delay(1000);
+}
+
+void yellowBlink()
+{
+  digitalWrite(RED_PIN, HIGH);
+  digitalWrite(GREEN_PIN, HIGH);
+  delay(2000);
+
+  digitalWrite(RED_PIN, LOW);
+  digitalWrite(GREEN_PIN, LOW);
+  delay(1000);
+}
+
+void lavenderBlink()
+{
+  digitalWrite(RED_PIN, HIGH);
+  digitalWrite(BLUE_PIN, HIGH);
+  delay(2000);
+
+  digitalWrite(RED_PIN, LOW);
+  digitalWrite(BLUE_PIN, LOW);
+  delay(1000);
+}
