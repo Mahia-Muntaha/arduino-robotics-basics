@@ -1,6 +1,6 @@
 # Arduino Robotics Basics
 
-A collection of beginner-level robotics projects and experiments
+A collection of beginner-level basic robotics projects and experiments
 developed using Arduino.
 
 ## Projects
